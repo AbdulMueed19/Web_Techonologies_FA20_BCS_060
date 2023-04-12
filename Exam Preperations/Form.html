@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in form</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center bg-gray-100 h-screen">
+<div class="w-full max-w-sm bg-white shadow-md rounded-md p-8">
+  <h1 class="font-bold text-center text-3xl mb-8">Sign in!</h1>
+  <form id="form" class="space-y-6"><input type="email" id="email" placeholder="Email"
+            class="w-full rounded-lg border p-3 border-slate-400 focus:border-blue-400 p-5">
+    <input type="password" id="password" placeholder="Password"
+           class="w-full rounded-lg p-3 border border-slate-400 focus:border-blue-400 p-5">
+    <input type="submit" id="submit" placeholder="Submit"
+           class="w-full p-3 rounded-md text-white bg-blue-800 hover:bg-black font-semibold"></form>
+</div>
+</body>
+<script>
+  const emailV = document.getElementById("email")
+  const passwordV = document.getElementById("password")
+  const form = document.getElementById("form")
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const email = emailV.value;
+    const password = passwordV.value;
+    /*email validation*/
+    const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+    if (!email.match(emailRegex)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+    /*password validation*/
+    if (password.length < 8) {
+      alert("Password must be at least 8 characters.");
+      return;
+    }
+    alert("Sign in successful!");
+  });
+</script>
+</html>
