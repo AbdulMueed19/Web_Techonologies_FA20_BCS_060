@@ -4,21 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"Ufone Clone"</title>
+    <title>"Ufone Pakistan - یوفون پاکستان _ Ufone 4G & 3G Sim Cards"</title>
     <link href="../dist/output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <script>
-
+window.onload = function() {
+    document.getElementById("logo").onclick = function() {
+        alert("Ufone Clone. Designed By Fa20-Bcs-060");
+    }
+}
 </script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+body{
+font-family:Montserrat;
+}
+</style>
 <body class="bg-gray-200">
 <!--Ufone Clone-->
 <header class="bg-orange-500 py-4 h-12">
     <div class="flex items-center justify-between px-4">
         <div class="ml-24 flex items-center space-x-4">
-            <a href="#" class="text-white hover:text-gray-200">Personal</a>
+            <a href="#" class="text-white hover:text-gray-200">Personal
+            </a>
             <a href="#" class="text-white hover:text-gray-200">Business</a>
-            <a href="#" class="text-white hover:text-gray-200">
+            <a href="#" class="text-white hover:text-gray-200">Corporate</a>
                 <img src="https://www.ufone.com/wp-content/uploads/2022/03/e-1.png" alt="">
             </a>
         </div>
@@ -28,12 +39,16 @@
     <div class="flex items-center justify-between px-4 py-2">
         <div class="flex items-center space-x-4">
             <div class="flex items-center space-x-2">
-                <img src="https://www.ufone.com/wp-content/uploads/2023/02/ufone-4g.png" alt="Logo" class="h-8 w-full">
-
+                <a href="#" id="logo"><img src="https://www.ufone.com/wp-content/uploads/2023/02/ufone-4g.png" alt="Logo"
+                        class="h-8 w-full"></a>
             </div>
             <ul class="flex items-center space-x-4">
                 <li class="relative group">
-                    <a href="#" class="text-gray-500 hover:text-gray-200">Products</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-200 flex items-center space-x-2">Products
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+                        </svg>
+                    </a>
                     <ul class="absolute left-0 hidden mt-2 space-y-2 bg-white text-gray-800 group-hover:block">
                         <li><a href="#" class="block px-4 py-2">Product 1</a></li>
                         <li><a href="#" class="block px-4 py-2">Product 2</a></li>
@@ -51,13 +66,137 @@
         <div class="flex items-center space-x-4">
             <input type="text" class="bg-gray-200 px-3 py-2 rounded-lg bg-white text-gray-800 border border-slate-400" placeholder="Enter Your Search">
             <ul class="flex items-center space-x-4">
-                <li><a href="#" class="text-black hover:text-gray-200">Social Icon 1</a></li>
-                <li><a href="#" class="text-black hover:text-gray-200">Social Icon 2</a></li>
-                <li><a href="#" class="text-black hover:text-gray-200">Social Icon 3</a></li>
+                <li>
+                    <a href="#" class="flex items-center justify-center h-8 w-8 rounded-full bg-orange-500 hover:bg-orange-600">
+                        <img src="facebook.svg" alt="Facebook" class="h-6 w-6 fill-current text-white">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center justify-center h-8 w-8 rounded-full bg-orange-500 hover:bg-orange-600">
+                        <img src="instagram.svg" alt="Instagram" class="h-6 w-6 fill-current text-white">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center justify-center h-8 w-8 rounded-full bg-orange-500 hover:bg-orange-600">
+                        <img src="twitter.svg" alt="Twitter" class="h-6 w-6 fill-current text-white">
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
+
+<section class="flex items-center justify-center w-screen ">
+    <img src="https://www.ufone.com/wp-content/uploads/2023/03/Web-Banner-inner-1200x267-min-1536x256.jpg" alt="Hero Image" class="w-full h-auto">
+</section>
+<div class="bg-gray-300 my-8 px-4 py-2 flex items-center space-x-2 overflow-hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-current text-gray-600 animate-ticker" viewBox="0 0 20 20">
+        <path d="M2 12h16v2H2z" />
+        <path fill-rule="evenodd" d="M0 0h24v24H0z" opacity="0" />
+    </svg>
+    <p class="text-gray-600 text-sm animate-ticker">Ufone! Its all about u! Ufone!</p>
+</div>
+<div class="py-8 bg-gradient-to-b from-white to-gray-200 shadow-xl">
+    <h2 class="px-4 text-3xl font-bold text-orange-500 mb-4">All in One</h2>
+    <div class="flex justify-center space-x-4">
+        <div class="flex bg-transparent p-4 ">
+            <img src="https://www.ufone.com/wp-content/uploads/2022/01/SCM.png" alt="Card 1" class="w-full h-full object-cover mb-4">
+            <p class="text-gray-800 flex-col space-y-8">Super Card Max <br>
+                With Unlimited Facebook & WhatsApp <br>
+                Mahinay bhar ki mukammal befikri sirf Rs. 749 mein
+                <button class="rounded-full bg-orange-500 w-48 h-12">Subscribe!</button>
+            </p>
+        </div>
+        <div class="flex bg-transparent p-4">
+            <img src="https://www.ufone.com/wp-content/uploads/2023/04/SC-Gold-FB-WhatsApp-1-min.png" alt="Card 1" class="w-full h-full object-cover mb-4">
+            <p class="text-gray-800 flex-col space-y-8">Super Card Max <br>
+                With Unlimited Facebook & WhatsApp <br>
+                Mahinay bhar ki mukammal befikri sirf Rs. 749 mein
+                <button class="rounded-full bg-orange-500 w-48 h-12">Subscribe!</button>
+            </p>
+        </div>
+        <div class="flex bg-transparent p-4">
+            <img src="https://www.ufone.com/wp-content/uploads/2022/11/scone-1-1.png" alt="Card 1" class="w-full h-full object-cover mb-4">
+            <p class="text-gray-800 flex-col space-y-8">Super Card Max <br>
+                With Unlimited Facebook & WhatsApp <br>
+                Mahinay bhar ki mukammal befikri sirf Rs. 749 mein
+                <button class="rounded-full bg-orange-500 w-48 h-12">Subscribe!</button>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="py-8 bg-gradient-to-b from-white to-gray-200 shadow-xl">
+    <h2 class="px-4 text-3xl font-bold text-orange-500 mb-4">Internet Bundles</h2>
+    <div class="flex justify-center space-x-4">
+        <div class="flex bg-transparent p-4 ">
+            <img src="https://www.ufone.com/wp-content/uploads/2022/01/SCM.png" alt="Card 1" class="w-full h-full object-cover mb-4">
+            <p class="text-gray-800 flex-col space-y-8">Super Card Max <br>
+                With Unlimited Facebook & WhatsApp <br>
+                Mahinay bhar ki mukammal befikri sirf Rs. 749 mein
+                <button class="rounded-full bg-orange-500 w-48 h-12">Subscribe!</button>
+            </p>
+
+        </div>
+        <div class="flex bg-transparent p-4">
+            <img src="https://www.ufone.com/wp-content/uploads/2023/04/SC-Gold-FB-WhatsApp-1-min.png" alt="Card 1" class="w-full h-full object-cover mb-4">
+            <p class="text-gray-800 flex-col space-y-8">Super Card Max <br>
+                With Unlimited Facebook & WhatsApp <br>
+                Mahinay bhar ki mukammal befikri sirf Rs. 749 mein
+                <button class="rounded-full bg-orange-500 w-48 h-12">Subscribe!</button>
+            </p>
+        </div>
+        <div class="flex bg-transparent p-4">
+            <img src="https://www.ufone.com/wp-content/uploads/2022/11/scone-1-1.png" alt="Card 1" class="w-full h-full object-cover mb-4">
+            <p class="text-gray-800 flex-col space-y-8">Super Card Max <br>
+                With Unlimited Facebook & WhatsApp <br>
+                Mahinay bhar ki mukammal befikri sirf Rs. 749 mein
+                <button class="rounded-full bg-orange-500 w-48 h-12">Subscribe!</button>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="py-8">
+    <h1 class="px-4 text-gray-500 text-3xl font-bold mb-4">Quick Links</h1>
+    <div class="flex justify-between px-4 items-center space-x-4">
+        <a href="#" class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 rounded-full bg-gray-400 hover:bg-orange-500 transition-colors duration-300"></div>
+            <p class="text-gray-600 mt-2">Super Card Family</p>
+        </a>
+        <a href="#" class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 rounded-full bg-gray-400 hover:bg-orange-500 transition-colors duration-300"></div>
+            <p class="text-gray-600 mt-2">Internet Bundles</p>
+        </a>
+        <a href="#" class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 rounded-full bg-gray-400 hover:bg-orange-500 transition-colors duration-300"></div>
+            <p class="text-gray-600 mt-2">Postpay</p>
+        </a>
+        <a href="#" class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 rounded-full bg-gray-400 hover:bg-orange-500 transition-colors duration-300"></div>
+            <p class="text-gray-600 mt-2">Coverage</p>
+        </a>
+        <a href="#" class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 rounded-full bg-gray-400 hover:bg-orange-500 transition-colors duration-300"></div>
+            <p class="text-gray-600 mt-2">Self Care</p>
+        </a>
+        <a href="#" class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 rounded-full bg-gray-400 hover:bg-orange-500 transition-colors duration-300"></div>
+            <p class="text-gray-600 mt-2">Buy Sim</p>
+        </a>
+    </div>
+</div>
+
+<div class="flex flex-col min-h-screen">
+    <footer class="bg-orange-500 text-white py-4 px-8 flex justify-center items-center mt-auto fixed bottom-0 w-full">
+        <p class="text-sm">
+            © 2023 UFONE. All rights reserved. Prepaid | Postpay | VAS | International | My Ufone | Press Center | DIRBS
+        </p>
+    </footer>
+    <!-- Live chat widget -->
+    <div class="fixed right-0 bottom-0 m-4 p-4 rounded-lg">
+        <a href="#"><img src="https://www.ufone.com/wp-content/uploads/2019/12/U-Online-Chat.png" alt=""></a>
+    </div>
+</div>
 
 </body>
 </html>
