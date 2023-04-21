@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC News</title>
+    <!-- Include Tailwind CSS -->
+    <!--<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">-->
+    <!--link for dist/css-->
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans">
+<header class="bg-white shadow">
+    <div class="">
+    <div class="container mx-auto px-4 py-3">
+        <h1 class="text-2xl font-bold text-gray-800">BBC News</h1>
+    </div>
+    <nav class="bg-white shadow">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-gray-600 hover:text-black">Home</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">World</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">UK</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">Business</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">Tech</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">Science</a></li>
+                    <li class="relative group">
+                        <a href="#" class="flex items-center text-gray-600 hover:text-black focus:outline-none">
+                            More
+                        </a>
+                        <ul class="absolute left-0 mt-2 space-y-2 bg-white text-gray-600 opacity-0 group-hover:opacity-100">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Sports</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Weather</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Arts</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Travel</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-black">Sign In</a>
+                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </div>
+</header>
+<main class="container mx-auto px-4 py-5">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- News Card 1 -->
+        <div class="bg-white rounded-lg shadow-md">
+            <img src="news1.jpg" alt="News 1" class="w-full h-48 object-cover rounded-t-lg">
+            <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Breaking News</h2>
+                <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fusce malesuada vestibulum ligula, sit amet auctor tortor convallis vitae.</p>
+                <a href="#" class="mt-3 block text-blue-500 hover:text-blue-700">Read More</a>
+            </div>
+        </div>
+        <!-- News Card 2 -->
+        <div class="bg-white rounded-lg shadow-md">
+            <img src="news2.jpg" alt="News 2" class="w-full h-48 object-cover rounded-t-lg">
+            <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Politics</h2>
+                <p class="text-gray-600 mt-2">Nam fermentum nulla quis neque luctus interdum. Sed
+                    fermentum libero vel massa tempor dictum.</p>
+                <a href="#" class="mt-3 block text-blue-500 hover:text-blue-700">Read More</a>
+            </div>
+        </div>
+        <!-- News Card 3 -->
+        <div class="bg-white rounded-lg shadow-md">
+            <img src="news3.jpg" alt="News 3" class="w-full h-48 object-cover rounded-t-lg">
+            <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Sports</h2>
+                <p class="text-gray-600 mt-2">Aliquam id fringilla dolor. Sed eget viverra sapien, non
+                    interdum risus.</p>
+                <a href="#" class="mt-3 block text-blue-500 hover:text-blue-700">Read More</a>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto px-4">
+        <p class="text-center">&copy; 2023 BBC News. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+
+</html>
