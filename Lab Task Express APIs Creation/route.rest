@@ -1,0 +1,6 @@
+GET http://localhost:4000/transactions
+Content-Type: application/json
+
+{
+
+}
