@@ -1,0 +1,11 @@
+POST http://localhost:3000/api/media/
+Content-Type: application/json
+
+
+  {
+    "filename": "example3.png",
+    "filetype": "image/png",
+    "size": "1024",
+    "extension": "png"
+  }
+

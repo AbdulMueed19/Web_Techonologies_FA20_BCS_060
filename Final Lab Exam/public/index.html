@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media List</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+    body{
+        font-family:Montserrat;
+    }
+</style>
+<body>
+
+<h1 class="font-bold bg-orange-500">Media List - Done By Abdul Mueed FA20-BCS-060</h1>
+<ul id="media-list"></ul>
+
+<script>
+    $(document).ready(function() d{
+
+        $.ajax({
+            url: '/api/media',
+            method: 'GET',
+            success: function(response) {
+                var mediaList = response.map(function(media) {
+                    return `<li>${media.filename} - ${media.filetype} - ${media.size} - ${media.extension}</li>`;
+                });
+
+                $('#media-list').append(mediaList);
+            },
+
+            error: function(error) {
+                console.log('Error:', error);
+            }
+        });
+    });
+</script>
+</body>
+</html>
