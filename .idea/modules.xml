@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/FirstLabWebTechnologies.iml" filepath="$PROJECT_DIR$/.idea/FirstLabWebTechnologies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Web_Technologies.iml" filepath="$PROJECT_DIR$/.idea/Web_Technologies.iml" />
     </modules>
   </component>
 </project>

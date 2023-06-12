@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinVerse! Quicker Transactions!</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/signin_form.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('#get-converted').click(function () {
+                $('#conversion').toggle();
+                $('#conversion').submit(function (e) {
+                    event.preventDefault();
+                    var amount = $('#usd').val();
+                    var appId = '74a2297d9efe44ffa84c1e3eb20e1c14';
+                    var url = 'https://openexchangerates.org/api/latest.json?app_id=' + appId + '&symbols=PKR';
+                    $.getJSON(url,function(data)
+                    {
+                        var rate = data.rates.PKR;
+                        var result = rate * amount;
+                        $('#pkr').val(result);
+                    })
+                })
+            })
+            $('#close-button').click(function () {
+                $('#conversion').hide();
+            })
+        })
+    </script>
+</head>

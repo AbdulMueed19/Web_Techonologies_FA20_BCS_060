@@ -1,0 +1,24 @@
+<%- include('partials/head') %>
+
+
+<div class=" flex-col bg-gradient-to-tl from-yellow-400 to-green-300 px-10">
+    <%- include('partials/navigation') %>
+    <h2 class="text-2xl font-bold my-4 mx-auto jus">Sign Up</h2>
+    <form action="/registration" class="space-y-24 mx-auto" method="post">
+        <div class="mb-4">
+            <label for="username" class="block text-gray-700 font-bold mb-2">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+        </div>
+        <div class="mb-4">
+            <label for="password" class="block text-gray-700 font-bold mb-2">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+        </div>
+        <div class="flex justify-center">
+            <button type="submit" style="background-color: limegreen" class="hover:bg-yellow-600 text-white font-bold py-2 px-4 my-10 rounded-xl" >
+                Sign Up
+            </button>
+        </div>
+    </form>
+</div>
+<%- include('partials/footer') %>
+
